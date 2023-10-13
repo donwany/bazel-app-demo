@@ -39,10 +39,18 @@ nohup bazel run :hello -- \
 
 ```shell
 nohup bazel run main:hello -- \
+  -n='elbowai' \
   --age=45 \
   --job='running' \
   --num_a=45 \
   --num_b=99 &
+```
+### Get helpful information
+```shell
+bazel run main:hello -- \
+  --age=45 \
+  --job='running' \
+  --helpfull
 ```
 ```shell
 sh run.sh

@@ -7,7 +7,7 @@ logging.set_verbosity(logging.INFO)
 # Flag names are globally defined!  So in general, we need to be
 # careful to pick names that are unlikely to be used by other libraries.
 # If there is a conflict, we'll get an error at import time.
-flags.DEFINE_string(name='name', default='Jane Random', help='Your name.')
+flags.DEFINE_string(name='name', default='Jane Random', help='Your name.', short_name='n')
 flags.DEFINE_integer(name='age', default=18, help='Your age in years.', lower_bound=0)
 flags.DEFINE_boolean(name='debug', default=False, help='Produces debugging output.')
 flags.DEFINE_enum(name='job', default='running', enum_values=['running', 'stopped'], help='Job status.')
