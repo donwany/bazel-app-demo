@@ -1,0 +1,131 @@
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //absl-demo:hello (0 packages loaded, 0 targets configured)
+INFO: Analyzed target //absl-demo:hello (0 packages loaded, 0 targets configured).
+INFO: Found 1 target...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+Target //absl-demo:hello up-to-date:
+  bazel-bin/absl-demo/hello
+INFO: Elapsed time: 0.097s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+INFO: Running command line: bazel-bin/absl-demo/hello '--age=45' '--job=running'
+I1013 03:47:03.919996 140704633489152 hello.py:19] Happy Birthday Jane Random
+I1013 03:47:03.920111 140704633489152 hello.py:21] You are 45 years old, and your job is running
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //absl-demo:hello (0 packages loaded, 0 targets configured)
+INFO: Analyzed target //absl-demo:hello (0 packages loaded, 0 targets configured).
+INFO: Found 1 target...
+[0 / 2] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+Target //absl-demo:hello up-to-date:
+  bazel-bin/absl-demo/hello
+INFO: Elapsed time: 0.178s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+INFO: Running command line: bazel-bin/absl-demo/hello '--age=45' '--job=running' '--a=45' '--b=99'
+Traceback (most recent call last):
+  File "/private/var/tmp/_bazel_tsiameh/4702e8b3c9dd9934b1fa968e1d6d2ce8/execroot/__main__/bazel-out/darwin-fastbuild/bin/absl-demo/hello.runfiles/__main__/absl-demo/hello.py", line 15, in <module>
+    flags.DEFINE_integer(name='a', default=0, required=True, help='Your number a.')
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 425, in DEFINE_integer
+    result = DEFINE(
+             ^^^^^^^
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 100, in DEFINE
+    return DEFINE_flag(
+           ^^^^^^^^^^^^
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 132, in DEFINE_flag
+    raise ValueError('Required flag --%s cannot have a non-None default' %
+ValueError: Required flag --a cannot have a non-None default
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //absl-demo:hello (0 packages loaded, 0 targets configured)
+INFO: Analyzed target //absl-demo:hello (0 packages loaded, 0 targets configured).
+INFO: Found 1 target...
+[0 / 2] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+Target //absl-demo:hello up-to-date:
+  bazel-bin/absl-demo/hello
+INFO: Elapsed time: 0.133s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+INFO: Running command line: bazel-bin/absl-demo/hello '--age=45' '--job=running' '--a=45' '--b=99'
+Traceback (most recent call last):
+  File "/private/var/tmp/_bazel_tsiameh/4702e8b3c9dd9934b1fa968e1d6d2ce8/execroot/__main__/bazel-out/darwin-fastbuild/bin/absl-demo/hello.runfiles/__main__/absl-demo/hello.py", line 15, in <module>
+    flags.DEFINE_integer(name='num_a', default=0, required=True, help='Your number a.')
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 425, in DEFINE_integer
+    result = DEFINE(
+             ^^^^^^^
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 100, in DEFINE
+    return DEFINE_flag(
+           ^^^^^^^^^^^^
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 132, in DEFINE_flag
+    raise ValueError('Required flag --%s cannot have a non-None default' %
+ValueError: Required flag --num_a cannot have a non-None default
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //absl-demo:hello (0 packages loaded, 0 targets configured)
+INFO: Analyzed target //absl-demo:hello (0 packages loaded, 0 targets configured).
+INFO: Found 1 target...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+Target //absl-demo:hello up-to-date:
+  bazel-bin/absl-demo/hello
+INFO: Elapsed time: 0.115s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+INFO: Running command line: bazel-bin/absl-demo/hello '--age=45' '--job=running' '--num_a=45' '--num_b=99'
+Traceback (most recent call last):
+  File "/private/var/tmp/_bazel_tsiameh/4702e8b3c9dd9934b1fa968e1d6d2ce8/execroot/__main__/bazel-out/darwin-fastbuild/bin/absl-demo/hello.runfiles/__main__/absl-demo/hello.py", line 15, in <module>
+    flags.DEFINE_integer(name='num_a', default=0, required=True, help='Your number a.')
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 425, in DEFINE_integer
+    result = DEFINE(
+             ^^^^^^^
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 100, in DEFINE
+    return DEFINE_flag(
+           ^^^^^^^^^^^^
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 132, in DEFINE_flag
+    raise ValueError('Required flag --%s cannot have a non-None default' %
+ValueError: Required flag --num_a cannot have a non-None default
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //absl-demo:hello (0 packages loaded, 0 targets configured)
+INFO: Analyzed target //absl-demo:hello (0 packages loaded, 0 targets configured).
+INFO: Found 1 target...
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+Target //absl-demo:hello up-to-date:
+  bazel-bin/absl-demo/hello
+INFO: Elapsed time: 0.128s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+INFO: Running command line: bazel-bin/absl-demo/hello '--age=45' '--job=running' '--num_a=45' '--num_b=99'
+Traceback (most recent call last):
+  File "/private/var/tmp/_bazel_tsiameh/4702e8b3c9dd9934b1fa968e1d6d2ce8/execroot/__main__/bazel-out/darwin-fastbuild/bin/absl-demo/hello.runfiles/__main__/absl-demo/hello.py", line 15, in <module>
+    flags.DEFINE_integer(name='num_a', default=1, required=True, help='Your number a.')
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 425, in DEFINE_integer
+    result = DEFINE(
+             ^^^^^^^
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 100, in DEFINE
+    return DEFINE_flag(
+           ^^^^^^^^^^^^
+  File "/Users/tsiameh/anaconda3/lib/python3.11/site-packages/absl/flags/_defines.py", line 132, in DEFINE_flag
+    raise ValueError('Required flag --%s cannot have a non-None default' %
+ValueError: Required flag --num_a cannot have a non-None default
+Loading: 
+Loading: 
+Loading: 0 packages loaded
+Analyzing: target //absl-demo:hello (0 packages loaded, 0 targets configured)
+INFO: Analyzed target //absl-demo:hello (0 packages loaded, 0 targets configured).
+INFO: Found 1 target...
+[0 / 2] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+Target //absl-demo:hello up-to-date:
+  bazel-bin/absl-demo/hello
+INFO: Elapsed time: 0.158s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+INFO: Build completed successfully, 1 total action
+INFO: Running command line: bazel-bin/absl-demo/hello '--age=45' '--job=running' '--num_a=45' '--num_b=99'
+I1013 04:26:38.030021 140704633489152 hello.py:24] Happy Birthday Jane Random
+I1013 04:26:38.030142 140704633489152 hello.py:26] You are 45 years old, and your job is running
+I1013 04:26:38.030215 140704633489152 hello.py:27] Adding two numbers: 144
