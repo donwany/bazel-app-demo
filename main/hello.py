@@ -1,6 +1,7 @@
 from absl import app
 from absl import flags
 from absl import logging
+from utils import add
 
 FLAGS = flags.FLAGS
 logging.set_verbosity(logging.INFO)
@@ -14,9 +15,6 @@ flags.DEFINE_enum(name='job', default='running', enum_values=['running', 'stoppe
 
 flags.DEFINE_integer(name='num_a', default=1, help='Your number a.')
 flags.DEFINE_integer(name='num_b', default=1, help='Your number b.')
-
-def add(a: int, b: int) -> int:
-  return a + b
 
 def main(argv):
   if FLAGS.debug:
