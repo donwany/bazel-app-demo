@@ -10,16 +10,22 @@ cd main
 bazel run :app
 ```
 ```shell
+cd main
+
 bazel run :hello -- \
   --age=45 \
   --job='running'
 ```
 ```shell
+cd main
+
 nohup bazel run :hello -- \
   --age=45 \
   --job='running' &
 ```
 ```shell
+cd main
+
 nohup bazel run :hello -- \
   --age=45 \
   --job='running' \
