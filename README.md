@@ -40,6 +40,9 @@ nohup bazel run main:hello -- \
   --num_a=45 \
   --num_b=99 &
 ```
+```shell
+sh run.sh
+```
 
 ```python
 python hello.py --age=99 --job='stopped'
