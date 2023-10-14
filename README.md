@@ -59,3 +59,36 @@ sh run.sh
 ```python
 python hello.py --age=99 --job='stopped'
 ```
+```python
+python test/test_example.py
+```
+### Dockerize Bazel
+```shell
+# build
+docker build -t hello-python-bazel .
+# run
+docker run -it --rm hello-python-bazel
+docker run -it hello-python-bazel
+
+docker exec -it hello-python-bazel bash
+```
+```shell
+docker run -it \
+-e name=worldboss \
+-e age=45 \
+-e job=running \
+-e num_a=99 \
+-e num_b=100 \
+hello-python-bazel
+```
+### Pass ENV file
+```shell
+docker build -t hello-python-bazel .
+
+docker run -it --env-file env_vars.env hello-python-bazel
+```
+### Using Docker Compose
+```shell
+docker-compose up
+docker-compose down
+```
