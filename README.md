@@ -72,23 +72,23 @@ docker run -it hello-python-bazel
 
 docker exec -it hello-python-bazel bash
 ```
-```docker
+```shell
 docker run -it \
--e name=worldboss \
--e age=45 \
--e job=running \
--e num_a=99 \
--e num_b=100 \
-hello-python-bazel
+    -e name=worldboss \
+    -e age=45 \
+    -e job=running \
+    -e num_a=99 \
+    -e num_b=100 \
+    hello-python-bazel
 ```
 ### Pass ENV file
-```docker
+```shell
 docker build -t hello-python-bazel .
 
 docker run -it --env-file env_vars.env hello-python-bazel
 ```
 ### Using Docker Compose
-```docker
+```shell
 docker-compose up
 docker-compose down
 ```
