@@ -1,7 +1,8 @@
 test:
 	python -m pytest -vs test/*.py
+
 coverage:
-	python -m pytest --cov=main
+	coverage run -m pytest test/*.py
 
 isort:
 	python -m isort main/*.py
@@ -18,7 +19,9 @@ help:
 	@echo "Available targets:"
 	@echo "  test     - Run tests using pytest"
 	@echo "  clean    - Remove generated test artifacts"
+	@echo "  format   - Format codes"
+	@echo "  sort     - sorts imports"
 	@echo "  help     - Display this help message"
 
 # Prevent make from failing when the 'clean' target is missing
-.PHONY: test clean help
+.PHONY: test clean format sort help

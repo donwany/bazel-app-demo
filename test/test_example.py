@@ -1,5 +1,6 @@
 from absl.testing import absltest
 
+
 def add(a: int, b: int) -> int:
   return a + b
 
