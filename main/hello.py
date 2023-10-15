@@ -1,3 +1,4 @@
+"""docstring for hello"""
 from absl import app, flags, logging
 
 FLAGS = flags.FLAGS
@@ -21,11 +22,13 @@ flags.DEFINE_integer(name="num_a", default=1, help="Your number a.")
 flags.DEFINE_integer(name="num_b", default=1, help="Your number b.")
 
 
-def add(a: int, b: int) -> int:
-    return a + b
+def add(num_a: int, num_b: int) -> int:
+    """function to add two numbers"""
+    return num_a + num_b
 
 
 def main(argv):
+    """main function"""
     if FLAGS.debug:
         logging.info(f"non-flag arguments: {argv}")
     logging.info(f"Happy Birthday {FLAGS.name}")

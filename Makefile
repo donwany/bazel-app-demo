@@ -10,6 +10,9 @@ isort:
 format:
 	python -m black main/*.py
 
+lint:
+	python -m pylint main/*.py
+
 # Add a 'clean' target to remove any generated test artifacts
 clean:
 	rm -rf __pycache__ .pytest_cache
@@ -20,8 +23,9 @@ help:
 	@echo "  test     - Run tests using pytest"
 	@echo "  clean    - Remove generated test artifacts"
 	@echo "  format   - Format codes"
-	@echo "  sort     - sorts imports"
+	@echo "  isort    - sorts imports"
+	@echo "  lint     - format with lint"
 	@echo "  help     - Display this help message"
 
 # Prevent make from failing when the 'clean' target is missing
-.PHONY: test clean format sort help
+.PHONY: test clean format isort lint help

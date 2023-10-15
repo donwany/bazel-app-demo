@@ -1,3 +1,5 @@
+"""docstring for app"""
+
 from absl import app, flags
 
 FLAGS = flags.FLAGS
@@ -13,8 +15,9 @@ flags.mark_flag_as_required(flag_name="dry_run")
 
 
 def main(argv):
+    """main function"""
     if len(argv) < 1:
-        raise Exception("Need more arguments")
+        raise ValueError("Need more arguments")
     print(FLAGS.dry_run)
     print(FLAGS.num_times)
     for i in range(0, FLAGS.num_times):

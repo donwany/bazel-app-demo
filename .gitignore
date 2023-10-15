@@ -2,6 +2,11 @@
 venv
 .venv
 
+bazel-bin/
+bazel-container-demo
+bazel-out
+bazel-testlogs
+
 # Cache directories and byte-code files
 *.py[cod]
 __pycache__/
