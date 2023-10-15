@@ -4,5 +4,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: hello-python-bazel
+    container_name: container-hello-python-bazel
     env_file:
       - ./env_vars.env
+    volumes:
+      - db-data:/usr/app
+    restart: no
+
+volumes:
+  db-data:

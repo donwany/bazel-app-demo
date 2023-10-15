@@ -52,10 +52,11 @@ bazel run main:hello -- \
   --job='running' \
   --helpfull
 ```
+### Run as shell-command
 ```shell
 sh run.sh
 ```
-
+### Run as python
 ```python
 python hello.py --age=99 --job='stopped'
 ```
