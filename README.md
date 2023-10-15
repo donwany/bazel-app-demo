@@ -89,6 +89,6 @@ docker run -it --env-file env_vars.env hello-python-bazel
 ```
 ### Using Docker Compose
 ```shell
-docker-compose up
-docker-compose down
+docker compose up
+docker compose down
 ```
