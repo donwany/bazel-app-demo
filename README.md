@@ -2,6 +2,9 @@
   - brew install bazel
   - version: 6.3.2-homebrew
 
+### Some libraries
+    - black, coverage, flake8, pytest, pytest-cov
+
 ### Run and Build
 ```shell
 cd main
