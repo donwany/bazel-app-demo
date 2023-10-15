@@ -32,3 +32,6 @@ jobs:
       - name: Test with pytest
         run: |
           python -m pytest test/*.py
+      - name: Format
+        run: |
+          python -m black main/*.py
